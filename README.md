@@ -76,3 +76,8 @@ As a user
 So I can remember good times
 I want to see when my photo was posted
 ```
+```
+As a user
+So I can see just my own photos
+I want to have my own page for just my photos
+```

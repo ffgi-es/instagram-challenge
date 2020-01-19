@@ -10,3 +10,13 @@ def sign_up(username: 'tester',
   fill_in 'Password confirmation', with: password_confirmation
   click_on 'Sign up'
 end
+
+def post_photo(caption: 'Test caption',
+               filepath: 'files/test.png')
+  visit new_post_path
+
+  fill_in 'caption', with: caption
+  attach_file 'image', File.expand_path(filepath, fixture_path)
+
+  click_on 'Submit'
+end
