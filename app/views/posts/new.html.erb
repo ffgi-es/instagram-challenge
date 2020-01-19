@@ -1,0 +1,7 @@
+<%= form_with url: posts_path, method: :post do |form| %>
+  <%= form.label 'Image' %>
+  <%= form.file_field :image, name: 'image' %><br>
+  <%= form.label 'Caption' %>
+  <%= form.text_area :caption, name: 'caption' %><br>
+  <%= form.submit :Submit %>
+<% end %>

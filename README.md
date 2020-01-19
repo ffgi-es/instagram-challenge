@@ -61,3 +61,8 @@ As a user
 So everyone can see what I'm doing
 I want to post a picture I've taken
 ```
+```
+As a user
+So I can give context to my photo
+I want to add a caption
+```

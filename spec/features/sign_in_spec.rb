@@ -1,6 +1,7 @@
 feature 'signing in' do
-  let(:user) { User.create(email: 'test@example.com',
-                           password: '123456') }
+  let(:user) do
+    User.create(email: 'test@example.com', password: '123456')
+  end
 
   scenario 'entering correct details' do
     visit new_user_session_path
