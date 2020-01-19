@@ -8,7 +8,9 @@ describe PostsController, type: :controller do
 
   describe 'POST #create' do
     it 'creates a post with an image' do
-      user = User.create email: 'postcreate@example.com', password: '123456'
+      user = User.create(email: 'postcreate@example.com',
+                         password: '123456',
+                         username: 'PostCreate')
       sign_in user
 
       image = fixture_file_upload('files/test.png', 'image/png')

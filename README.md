@@ -66,3 +66,13 @@ As a user
 So I can give context to my photo
 I want to add a caption
 ```
+```
+As a user
+So everyone knows who I am
+I want my username to be shown with my photos
+```
+```
+As a user
+So I can remember good times
+I want to see when my photo was posted
+```

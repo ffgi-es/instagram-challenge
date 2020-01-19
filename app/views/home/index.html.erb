@@ -6,9 +6,11 @@
 
 <% @posts.each do |post| %>
   <div>
+    <p><%= post.user.username %> posted:</p>
     <% if post.image.attached? %>
       <img src="<%= url_for(post.image) %>" alt="<%= post.caption %>">
     <% end %>
+    <p><%= post.created_at.strftime '%H:%M %d/%m/%y' %></p>
     <p><%= post.caption %></p>
   </div>
 <% end %>
