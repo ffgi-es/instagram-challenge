@@ -81,3 +81,13 @@ As a user
 So I can see just my own photos
 I want to have my own page for just my photos
 ```
+```
+As a user
+So I can give my opinion on others photos
+I want to be able to comment on photos
+```
+```
+As a user
+So I can see how popular different photos are
+I want to 'like' posts and see a like count
+```

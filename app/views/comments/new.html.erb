@@ -1,0 +1,6 @@
+<%= form_with url: comments_path, method: :post do |f| %>
+  <%= f.hidden_field :post_id, value: @post_id %>
+  <%= f.label 'Comment' %>
+  <%= f.text_area :comment, name: 'comment' %><br>
+  <%= f.submit :submit, value: 'Submit' %>
+<% end %>

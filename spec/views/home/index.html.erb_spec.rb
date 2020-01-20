@@ -14,12 +14,14 @@ RSpec.describe "home/index.html.erb", type: :view do
     image = double :image, attached?: true
     user = double :user, username: 'Tester'
     post = double(:post,
+                  id: 1,
                   image: image,
                   caption: 'Test caption',
                   created_at: Time.zone.parse('2020-01-01 12:30:23'),
                   user: user)
 
     assign(:posts, [post])
+    assign(:comments, [])
     allow(view).to receive(:url_for) { |x| x }
 
     render
